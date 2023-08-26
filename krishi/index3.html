@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কৃষি ডেস্ক</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            background-image: url("bhat.avif");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+        }
+
+        /* Navbar Styles */
+        .nav {
+            height: 65px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Content Styles */
+        .content {
+            max-width: 1000px;
+            height: 100%;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: rgba(69, 198, 9, 0.932);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        /* ... your existing styles ... */
+        #upload-input {
+            display: none;
+        }
+
+        ul {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -45px;
+            width: max-content;
+            text-decoration: none;
+        }
+
+        ul li {
+            list-style: none;
+            margin-left: 62px;
+            margin-top: 27px;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: rgb(147, 155, 154);
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover {
+            color: green;
+            text-decoration: none;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        /* ... your existing styles ... */
+
+        /* Additional styles for the new page */
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-container .col-md-4 {
+            margin-bottom: 20px;
+        }
+
+        .image-label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        .blur{
+            padding-bottom: 30px;
+        }
+        
+        /* Rectangular Image Styles */
+        .rectangular-img {
+            width: 100%; /* Adjust the width as needed */
+            height: auto;
+            overflow: hidden;
+            background-color: #fff;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .rectangular-img img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .image-label{
+            color: white;
+            width: fit-content;
+            text-align: center;
+        }
+
+        .div{
+            height: 30px;
+            width: 40px;
+            color: white;
+            background-color: #fff;
+            margin-top: 30000px;
+        }
+        .doctor{
+            height: 100px;
+            width: 400px;
+            color: white;
+            background-color: #fff;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-leaf mr-2"></i>
+                কৃষি ডেস্ক
+            </a>
+            <ul class="ml-auto">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="Home.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <h1 style="text-align: center;">আপনার ফসলের রোগ নির্ণয় সফল হয়েছে !</h1>
+        <div class="blur">
+            <div class="content">
+                
+                <div class="image-container">
+                    <div class="col-md-4">
+                        <p class="image-label">ধানের টুংরো রোগ</p>
+                        <div class="rectangular-img">
+                            <img src="tungra virus.jpg" alt="Rectangle Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="image-label">ঔষধ</p>
+                        <div class="rectangular-img">
+                            <img src="Tungra.jpg" alt="Rectangle Image" class="img-fluid">
+                        </div>
+                        
+                    </div>
+
+                    <!-- <div class="col-md-4">
+                        <p class="image-label">Image 3</p>
+                         
+                        </div>
+                         
+                    </div> -->
+                    <div class="col-md-4" style="height: 20px; width: 90px; background-color: transparent;">
+                        
+                        <div class="rectangular-img">
+                            <img src="speaker.png" alt="Rectangle Image" class="img-fluid" style="height: 25px;width:15px; ">
+                        </div class="div">
+                        
+                </div>
+                <div> <h4>প্রয়োগবিধি জানতে মাইক চাপুন</h4><br>
+               
+                </div>
+                <div class="doctor">
+
+                    <p style="color: black;">বিশেষজ্ঞ মতামত নিতে যোগাযোগ করুন:</p>
+                    <p style="color: blue;">ড. এইচ. এম. মনিরুজ্জামান</p>
+
+                    
+                    
+                    <p style="color: blue;">Mobile: 01757426888</p>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

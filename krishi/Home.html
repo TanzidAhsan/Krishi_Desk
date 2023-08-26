@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কৃষি ডেস্ক - Login</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            display: flex;
+            background-image: url("bhat.avif");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            backdrop-filter: blur(7px);
+        }
+
+        /* Video Styles */
+        .video-container {
+            flex: 1;
+            background-image: url(""); /* Replace with your video URL */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            width: fit-content;
+            padding-left: 20px;
+            
+        }
+
+        /* Content Styles */
+        .content {
+            flex: 1;
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: green;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: white;
+            margin-right: 20px;
+        }
+
+        /* Logo Styles */
+        .logo {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* Form Styles */
+        .login-form {
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .login-button {
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .login-button:hover {
+            background-color: darkgreen;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video class="video" autoplay=1 loop="" controls=" " width="90%" height="100%" style="mergin" border-radius=" .8rem"
+        margin-top="55px"
+         > 
+                          <source src="Floating farms in Bangladesh enables year-round farming.mp4" type="video/mp4">
+                        </video>
+
+    </div>
+    <div class="content">
+        
+        <div class="logo">
+            <i class="fas fa-leaf mr-2"></i> কৃষি ডেস্ক
+        </div>
+        <form class="login-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control">
+            </div>
+            <a href="index.html" class="login-button">Login</a>
+        </form>
+    </div>
+</body>
+</html>
